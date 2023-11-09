@@ -61,7 +61,7 @@ if (enviando) return;
        }
     }
 
-    const dataMessage = `*=> Título:* ${data.resultado.title}\n*=> Canal:* ${data.resultado.channel}\n*=> URL:* ${data.resultado.url}\n*=> Publicado:* ${data.resultado.publicDate}`;
+    const dataMessage = `*=> Título:* ${data.resultado.title}\n*=> Publicado:* ${data.resultado.publicDate}`;
     await conn.sendMessage(m.chat, { text: dataMessage }, { quoted: m });
 
     if (buff) {
